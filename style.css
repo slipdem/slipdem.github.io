@@ -2,44 +2,106 @@ body, html {
     margin:0px;
     padding:0px;
     height: 100%;
+    font-family: sans-serif;
 }
 html {
-    background: url(images/Nighthawks.jpg) no-repeat center center fixed; 
+    background: url(images/wave.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
 }
-
 #base {
-    width:960px;
+    width:963px;
     margin:0 auto;
     min-height: 100%;
 }
 #header {
-    background-color: #6699cc;
     height: 125px;
 }
-
-#content {
+#container {
     background-color: #ffffff;
-    width: 960px;
+    width: 963px;
+    height: 100%;
     margin: auto;
 }
+#content {
+    background-color: #ffffff;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    text-align: justify;
+}
 #footer {
-    background-color: #666666;
+    background-color: rgb(96,145,172);
     clear: both;
-    height: 80px;
-    margin-top: -80px;
-    width: 960px;
+    height: 100px;
+    margin-top: -50px;
+    width: 963px;
     margin-left: auto;
     margin-right: auto;
 }
-
 #devider {
     height: 80px;
 }
-
-.menu_list {
-    list-style: none;
+#menu_list {
+    padding: 0px;
+    margin: 0px;
+    font-size: 100%;
+    padding-top: 90px;
 }
+#menu_list li {
+    list-style: none;
+    float: left;
+    height: 23px;
+    padding: 0;
+    margin: 0;
+    width: 107px;
+    text-align: center;
+    background: rgb(46,95,122);
+    position: relative;
+    padding-top: 12px;
+}
+#menu_list li ul {
+    list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 107px;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 35px;
+}
+#menu_list li ul li {
+	float: none;
+	height: 23px;
+	margin: 0;
+	width: 107px;
+	text-align: center;
+	background: rgb(96,145,172);
+}
+#menu_list li a {
+	display: block;
+	width: 107px;
+	height: 23px;
+	color: #fff;
+	text-decoration: none;
+}
+#menu_list li:hover ul, #menu_list li.jshover ul {
+	display: block;
+}
+#menu_list li:hover, #menu_list li.jshover {
+	background: rgb(96,145,172);
+}
+#social {
+    width: 450px;
+    height: 80px;
+    float: right;
+}
+#address {
+    float: left;
+    height: 80px;
+}
+
+
