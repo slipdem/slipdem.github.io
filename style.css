@@ -1,8 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700&subset=latin,cyrillic);
+
 body, html {
     margin:0px;
     padding:0px;
     height: 100%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 html {
     background: url(images/wave.jpg) no-repeat center center fixed;
@@ -18,37 +20,6 @@ html {
 }
 #header {
     height: 55px;
-}
-#container {
-    background-color: #ffffff;
-    width: 963px;
-    height: 100%;
-    margin: auto; 
-}
-#content {
-    background-color: #ffffff;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    text-align: justify;
-}
-.devider {
-    height: 100px;
-    clear: both;
-}
-#footer {
-    background-color: rgb(96,145,172);
-    height: 100px;
-    margin-top: -100px;
-    margin-bottom: 25px;
-    width: 963px;
-    margin-left: auto;
-    margin-right: auto;
-    -moz-border-radius-bottomleft: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -webkit-border-bottom-right-radius: 5px;
 }
 #menu_list {
     padding: 0px;
@@ -99,6 +70,43 @@ html {
 #menu_list li:hover, #menu_list li.jshover {
 	background: rgb(96,145,172);
 }
+#container {
+    background-color: #ffffff;
+    width: 963px;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+#content {
+    background-color: #ffffff;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    text-align: justify;
+    word-wrap:break-all;
+}
+.img {
+text-align: center;
+}
+
+.devider {
+    height: 100px;
+    clear: both;
+}
+#footer {
+    background-color: rgb(96,145,172);
+    height: 100px;
+    margin-top: -100px;
+    margin-bottom: 25px;
+    width: 963px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
 #social {
     float: right;
     width: 450px;
@@ -147,10 +155,4 @@ html {
 }
 .icon.lin-item {
     background-position: -84px -84px;
-}
-.img {
-text-align: center;
-}
-#code {
-color: #00f;
 }
