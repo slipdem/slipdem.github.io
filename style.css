@@ -148,3 +148,9 @@ html {
 .icon.lin-item {
     background-position: -84px -84px;
 }
+.img {
+text-align: center;
+}
+#code {
+color: #00f;
+}
