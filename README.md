@@ -1,2 +1,3 @@
 # slipdem.github.io
-My personal page experiments.
+My personal page for resume. 
+Page for HTML/CSS/JS experiments.
