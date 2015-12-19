@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700&subset=latin,cyrillic);
-
 *,
 *:before,
 *:after {
@@ -9,9 +7,8 @@
 }
 
 body {
-    background: #F1F1F1;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Georgia', sans-serif; color: #444;
 }
 
 .main-container,footer,header {
@@ -20,9 +17,9 @@ body {
 }
     
 header {
-    height: 80px;
-    background: white;
-    box-shadow: 2px 2px 2px #888888;
+    height: 250px;
+    background: #F1F1F1;
+    box-shadow: 2px 2px 2px #888888;    
 }
 
 .content {
@@ -33,7 +30,7 @@ header {
     text-align: justify;
     padding: 20px;
     height: 100%;
-    background: white;
+    background: #F1F1F1;
     box-shadow: 2px 2px 2px #888888;
 }
 .left-cont {
@@ -47,7 +44,7 @@ header {
     text-align: justify;
     padding: 20px;
     height: 100%;
-    background: white;
+    background: #F1F1F1;
     box-shadow: 2px 2px 2px #888888;
 }
 
@@ -55,7 +52,7 @@ footer {
     padding: 20px;
     left: 0;
     bottom: 0;
-    background: white;
+    background: #F1F1F1;
     box-shadow: 2px 2px 2px #888888;
 }
 
@@ -70,14 +67,16 @@ footer {
 .nav > li > a {
     display: block;
     *display: block;
-    text-transform: uppercase;
+/*  text-transform: uppercase; */
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
+    
+    color: #444;
     zoom 1; 
 }
 .nav > li > a:hover{
-    color: #FFDD00;
+    color: #ff9933;
 }
     
     
@@ -141,7 +140,16 @@ h2:after {
   margin-right: -50%;
 }  /* LINES IN TEXT FINISH */
 
-.myphoto {
-    float: right;
-    margin: 0 0 10px 10px;
+.contact {
+    /*padding-bottom: 120px;
+    margin-bottom: 120px;*/
+}
+
+.photo {
+    float: left;
+    
+}
+
+.text_info {
+
 }
