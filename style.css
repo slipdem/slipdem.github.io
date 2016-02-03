@@ -1,9 +1,9 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     font-family: Georgia, serif;
     color: #444;
 }
-    
+
 header {
     height: 240px;
     background: #F1F1F1;
@@ -28,7 +28,7 @@ header {
     float: left;
     text-align: center;
     padding-top: 12px;
- }
+}
 
 .title {
     float: right;
@@ -60,42 +60,49 @@ h3 {
     font-size: 50px;
 }
 
+
 /* MEDIA STARTS HERE */
-@media screen and (min-width: 760px) {
-}
 
+@media screen and (min-width: 760px) {}
 
-h2 {  /* LINES IN TEXT START */
-  overflow: hidden;
-  position: relative;
-  margin: 0;
-  text-align: center;
-  white-space: nowrap;
+h2 {
+    /* LINES IN TEXT START */
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
 }
 
 h2:before,
 h2:after {
-  content: '';
-  display: inline-block;
-  position: relative;
-  top: -1px;
-  width: 50%;
-  height: 1px;
-  vertical-align: middle;
-  background: black;
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    width: 50%;
+    height: 1px;
+    vertical-align: middle;
+    background: black;
 }
+
 h2:before {
-  left: -10px;
-  margin-left: -50%;
+    left: -10px;
+    margin-left: -50%;
 }
+
 h2:after {
-  left: 10px;
-  margin-right: -50%;
-}  /* LINES IN TEXT FINISH */
+    left: 10px;
+    margin-right: -50%;
+}
+
+
+/* LINES IN TEXT FINISH */
+
 h4 {
     font-size: 35px;
 }
 
 .profile {
-     font-style: italic;
+    font-style: italic;
 }
