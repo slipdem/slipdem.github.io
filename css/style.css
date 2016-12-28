@@ -1,79 +1,68 @@
-/*------------------------------------*\
-    basic elements
+/*------------------------------------*    basic elements
 \*------------------------------------*/
 html {
-    font-size: 16px;
-}
-body,
-header,
-main,
-footer,
-section,
-div,
-nav,
-form,
-p {
-    padding: 0;
-    margin:  0;
-    box-sizing: border-box;
-}
+  font-size: 16px; }
+
+body, header, main, footer, section, div, nav, form, p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 body {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: 'Roboto', 'Tahoma' sans-serif;
+  padding: 0 50px;
+  background: honeydew;
+  color: #ffffff; }
 
-    font-family: 'Roboto', 'Tahoma' sans-serif;
-
-    padding: 0 50px;
-    background: honeydew;
-    color: #ffffff;
-}
 a {
-    text-decoration: none;
-    color: #ffffff;
-}
-fa {
+  text-decoration: none;
+  color: #ffffff; }
 
-}
-/*------------------------------------*\
-    header
+/*------------------------------------*    header
 \*------------------------------------*/
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 1rem 2rem;
+  background: lightblue; }
+  .site-header a + a {
+    margin-left: 1.5rem; }
 
-    padding: 1rem 2rem;
-    background: lightblue;
-}
-.site-header a+a {
-    margin-left: 1.5rem;
-}
 .site-nav {
-    text-align: center;
-    flex-grow: 2;
-    text-transform: uppercase;
-}
+  text-align: center;
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  text-transform: uppercase; }
+
 .main-logo {
-    height: 50px;
-    width:  50px;
-}
+  height: 50px;
+  width: 50px; }
+
 .functional-buttons {
-    align-self: flex-start;
-}
-.site-header nav {
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
 
-}
-
-
-/*------------------------------------*\
-    main
+/*------------------------------------*    main
 \*------------------------------------*/
 section {
-    background: darkcyan;
-}
-/*------------------------------------*\
-    footer
+  background: darkcyan; }
+
+/*------------------------------------*    footer
 \*------------------------------------*/
 footer {
-    background: darkolivegreen;
-}
+  background: darkolivegreen; }
