@@ -1,0 +1,31 @@
+// COLORS
+$color-white: #ffffff;
+$color-whitesmoke: #f0f0f0;
+$color-silver: #b8b8b8;
+$color-dimgrey: #707070;
+$color-tomato: #ff5733;
+html {
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', 'Tahoma' sans-serif;
+  background: $color-white;
+}
+
+a {
+}
+
+fa {
+
+}
+*::selection {
+  color: $color-white;
+  background-color: $color-tomato;
+}

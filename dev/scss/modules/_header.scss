@@ -1,0 +1,23 @@
+// HEADER START
+.site-header {
+  padding: 1rem 2rem;
+  color: $color-white;
+  background: $color-dimgrey;
+  a + a {
+    margin-left: 1.5rem;
+  }
+}
+.site-nav {
+  text-align: center;
+  flex-grow: 2;
+  text-transform: uppercase;
+}
+.main-logo {
+  height: 70px;
+  width:  70px;
+}
+.functional-buttons {
+  align-self: flex-start;
+}
+.site-header nav {}
+// HEADER END
