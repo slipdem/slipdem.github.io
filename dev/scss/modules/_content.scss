@@ -1,7 +1,24 @@
-/*------------------------------------*\
-    main
-\*------------------------------------*/
-
-section {
-  background: darkcyan;
+.cv-content {
+  padding: 2rem;
+  padding-right: 0;
+  width: 100%;
+  section {
+    margin-bottom: 2rem;
+  }
+}
+.cv-content-section-heading {
+  margin-bottom: 1rem;
+  background-color: $color-whitesmoke;
+  padding: 1rem 0;
+  padding-left: 1rem;
+  & * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  h3 {
+    margin-left: 0.7rem;
+  }
+}
+.cv-content-section-content {
+  padding-left: 2rem;
 }

@@ -1,4 +1,5 @@
 main,
+aside,
 header,
 footer,
 section,
@@ -8,14 +9,25 @@ form,
 p,
 ul,
 ol,
-li {
+li,
+label {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+main.container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 li {
 	list-style: none;
 }
 a {
 	text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  text-transform: uppercase;
 }

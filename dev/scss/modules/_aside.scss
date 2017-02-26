@@ -1,0 +1,33 @@
+.site-aside {
+  background-color: $color-whitesmoke;
+  min-width: 300px;
+  text-align: center;
+  section {
+    margin-bottom: 1rem;
+  }
+}
+.aside-logo {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 200px;
+  width:  200px;
+  margin: 2rem auto;
+  background-image: url(../images/gap.jpg);
+  background-size: cover;
+  border: 2px solid $color-silver;
+  filter: grayscale(100%);
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+.aside-personal {
+
+}
+.aside-section-heading {
+  width: 100%;
+  border-bottom: 2px solid $color-silver;
+  margin-bottom: 0.8rem;
+}
+.aside-content {
+  padding: 0 1rem;
+}

@@ -1,0 +1,65 @@
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+html,
+body {
+  height: 100%;
+  width:  100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  background: $color-white;
+}
+*::selection {
+  color: $color-white;
+  background-color: $color-tomato;
+}
+main {
+  display: flex;
+
+  flex: 1 0 auto;
+}
+.site-header,
+.site-footer {
+  flex: 0 0 auto;
+}
+// Container
+.container {
+  padding: 1.5rem 10%;
+}
+@media screen and (max-width: 1920px) {
+  .container {
+    padding: 1.5rem 20%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    padding: 1.5rem 10%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .container {
+    padding: 1.5rem 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+
+}
+// Container END
+h2,
+h3 {
+  letter-spacing: 3px;
+}
+.btn {
+  border-radius: 3px;
+  border: 1px solid $color-whitesmoke;
+  background-color: $color-darkslategray;
+  color: $color-white;
+  padding: 0.5rem 0.8rem;
+}
+.animate {
+  transition: all 0.3s;
+}

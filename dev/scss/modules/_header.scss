@@ -1,23 +1,76 @@
 // HEADER START
 .site-header {
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
   color: $color-white;
-  background: $color-dimgrey;
-  a + a {
-    margin-left: 1.5rem;
+  height: auto;
+  background: $color-darkslategray;
+}
+.site-header-heading {
+  h1, h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
   }
 }
-.site-nav {
-  text-align: center;
-  flex-grow: 2;
-  text-transform: uppercase;
+.float-right {
+  float: right;
 }
-.main-logo {
-  height: 70px;
-  width:  70px;
+.header-functional-button {
+  position: relative;
+  align-self: flex-end;
+  text-align: left;
+  label {
+    display: block;
+    width: 180px;
+    padding: 0.5rem 0.625rem;
+    z-index: 2;
+    border-radius: 3px;
+    border: 1px solid $color-silver;
+  }
+  .fa {
+    line-height: 1.5;
+  }
+  input {
+    display: none;
+  }
 }
-.functional-buttons {
-  align-self: flex-start;
+.header-btn-list {
+  position: absolute;
+  right: 0;
+  display: none;
+  width: 180px;
+  border-radius: 3px;
+  background-color: $color-dimgrey;
+  border: 1px solid $color-silver;
+  margin-top: 2px;
+  li {
+    width: 180px;
+    padding: 0.5rem 0.625rem;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $color-silver;
+    }
+    &:hover {
+      background: $color-darkslategray;
+    }
+    a {
+      color: $color-white;
+      font-weight: 300;
+      padding: 0.6rem 2.5rem 0.6rem 0;
+    }
+  }
 }
-.site-header nav {}
+.header-functional-button label:hover,
+.header-functional-button input:checked + label {
+  background-color: $color-dimgrey;
+  cursor: pointer;
+}
+.header-functional-button input:checked ~ .header-btn-list {
+  display: block;
+}
+// header media
+
 // HEADER END

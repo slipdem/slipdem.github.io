@@ -1,19 +1,19 @@
-header.site-header
+header.site-header.container
   div.site-header-heading
     h1 Dmytro Slipchenko
-    h3 Frontend Developer
-  //- nav.site-nav
-  //-   a(href='#') One
-  //-   a(href='#') Two
-  //-   img.main-logo(src='images/logo.svg', alt='logo')
-  //-   a(href='#') Four
-  //-   a(href='#') Five
-  nav.functional-buttons
-    a(href='#', title='Print CV')
-      i.fa.fa-print(aria-hidden='true')
-    a(href='#', title='Download CV in PDF')
-      i.fa.fa-download(aria-hidden='true')
-    a(href='#', title='Send CV by E-mail')
-      i.fa.fa-envelope-o(aria-hidden='true')
-    a(href='#', title='Change the Language')
-      i.fa.fa-globe(aria-hidden='true')
+    h2 Frontend Developer
+
+  div.header-functional-button
+    input#header-btn.btn(type='checkbox')
+    label.animate(for='header-btn') Resume
+      i.fa.fa-pencil-square-o.float-right(aria-hidden='true')
+    ul.animate.header-btn-list
+      li.animate
+        a(href='#', title='Print CV') Print Resume
+          i.fa.fa-print.float-right(aria-hidden='true')
+      li.animate
+        a(href='#', title='Download CV in PDF') Download as PDF
+          i.fa.fa-download.float-right(aria-hidden='true')
+      li.animate
+        a(href='#', title='Send CV by E-mail') Send by Email
+          i.fa.fa-envelope-o.float-right(aria-hidden='true')
