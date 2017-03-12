@@ -11,15 +11,15 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  background: $color-white;
+  color: $color-darkslategray;
+  background-color: $color-whitesmoke;
 }
 *::selection {
   color: $color-white;
   background-color: $color-tomato;
 }
-main {
+.main-column {
   display: flex;
-
   flex: 1 0 auto;
 }
 .site-header,
@@ -28,25 +28,40 @@ main {
 }
 // Container
 .container {
-  padding: 1.5rem 10%;
+  padding: 1rem 10%;
 }
 @media screen and (max-width: 1920px) {
   .container {
-    padding: 1.5rem 20%;
+    padding: 1rem 18%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 1rem 14%;
   }
 }
 @media screen and (max-width: 1280px) {
   .container {
-    padding: 1.5rem 10%;
+    padding: 1rem 10%;
   }
 }
 @media screen and (max-width: 960px) {
   .container {
-    padding: 1.5rem 5%;
+    padding: 1rem 5%;
   }
 }
 @media screen and (max-width: 768px) {
-
+  .main-column {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 0;
+  }
+  .header-functional-button {
+    display: none;
+  }
 }
 // Container END
 h2,

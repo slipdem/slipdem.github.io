@@ -6,14 +6,17 @@ header.site-header.container
   div.header-functional-button
     input#header-btn.btn(type='checkbox')
     label.animate(for='header-btn') Resume
-      i.fa.fa-pencil-square-o.float-right(aria-hidden='true')
+      i.fa.fa-sort-desc.float-right(aria-hidden='true')
     ul.animate.header-btn-list
       li.animate
-        a(href='#', title='Print CV') Print Resume
+        a(href='#', title='Change resume language to Ukrainian') Language to
+          span.flag.flag-ua.float-right
+      li.animate
+        a(href='#', title='Download resume as PDF') Download as PDF
+          i.fa.fa-file-pdf-o.float-right(aria-hidden='true')
+      li.animate
+        a(href='#', title='Send resume by E-mail') Send by E-mail
+          i.fa.fa-envelope-open-o.float-right(aria-hidden='true')
+      li.animate
+        a(href='#', title='Print resume') Print Resume
           i.fa.fa-print.float-right(aria-hidden='true')
-      li.animate
-        a(href='#', title='Download CV in PDF') Download as PDF
-          i.fa.fa-download.float-right(aria-hidden='true')
-      li.animate
-        a(href='#', title='Send CV by E-mail') Send by Email
-          i.fa.fa-envelope-o.float-right(aria-hidden='true')

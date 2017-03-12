@@ -24,6 +24,13 @@ li {
 }
 a {
 	text-decoration: none;
+  color: $color-darkslategrey;
+  &:hover, &:active, &:focus {
+    color: $color-orange;
+  }
+  &:visited {
+    color: $color-darkslategrey;
+  }
 }
 h1,
 h2,

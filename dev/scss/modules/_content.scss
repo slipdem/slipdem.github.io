@@ -2,15 +2,18 @@
   padding: 2rem;
   padding-right: 0;
   width: 100%;
+  background-color: $color-white;
   section {
     margin-bottom: 2rem;
   }
 }
+.cv-content-sections {
+  padding-right: 2rem;
+}
 .cv-content-section-heading {
   margin-bottom: 1rem;
-  background-color: $color-whitesmoke;
-  padding: 1rem 0;
-  padding-left: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid $color-silver;
   & * {
     display: inline-block;
     vertical-align: middle;
@@ -19,6 +22,30 @@
     margin-left: 0.7rem;
   }
 }
+.cv-content-portfolio {
+  .portfolio-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      margin: 0.5rem;
+      height: 150px;
+      width: 150px;
+      background: url(../images/gap.jpg) no-repeat;
+      background-size: contain;
+      border: 2px solid $color-silver;
+      filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+}
 .cv-content-section-content {
   padding-left: 2rem;
+}
+.interests-list {
+  display: flex;
+  justify-content: space-around;
 }

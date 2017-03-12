@@ -4,9 +4,12 @@
   justify-content: space-between;
   color: $color-white;
   height: auto;
-  background: $color-darkslategray;
+  background: $color-steelblue;
+  border-top: 10px solid $color-darkslategrey;
 }
 .site-header-heading {
+  width: 100%;
+  text-align: center;
   h1, h2 {
     text-transform: uppercase;
     font-weight: 400;
@@ -23,13 +26,19 @@
   position: relative;
   align-self: flex-end;
   text-align: left;
+  display: none;
   label {
     display: block;
-    width: 180px;
-    padding: 0.5rem 0.625rem;
     z-index: 2;
+    width: 180px;
+    letter-spacing: 3px;
+    padding: 0.5rem 0.625rem;
+    font-weight: 300;
     border-radius: 3px;
     border: 1px solid $color-silver;
+    .fa-sort-desc {
+      line-height: 1.2;
+    }
   }
   .fa {
     line-height: 1.5;
@@ -71,6 +80,33 @@
 .header-functional-button input:checked ~ .header-btn-list {
   display: block;
 }
+.flag {
+  height: 25px;
+  width: 30px;
+}
+.flag-ua {
+  background-image: url(../images/ua.svg);
+}
+.flag-uk {
+  background-image: url(../images/uk.svg);
+}
 // header media
-
+@media screen and (max-width: 768px) {
+  .site-header-heading {
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .site-header-heading {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
 // HEADER END

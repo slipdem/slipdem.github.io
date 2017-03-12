@@ -1,5 +1,7 @@
 // FOOTER
 footer.site-footer {
+  // display: none;
   color: $color-white;
-  background: $color-dimgrey;
+  background: $color-steelblue;
+  border-bottom: 10px solid $color-darkslategrey;
 }
