@@ -7,6 +7,26 @@
     margin-bottom: 2rem;
   }
 }
+// Content Icon's START
+.icon__about {
+  background-image: url(../images/content/user.svg);
+}
+.icon__skills {
+  background-image: url(../images/content/code.svg);
+}
+.icon__work {
+  background-image: url(../images/content/work.svg);
+}
+.icon__edu {
+  background-image: url(../images/content/diploma.svg);
+}
+.icon__portfolio {
+  background-image: url(../images/content/portfolio.svg);
+}
+.icon__interests {
+  background-image: url(../images/content/idea.svg);
+}
+// Content Icon's FINISH
 .cv-content-sections {
   padding-right: 2rem;
 }
@@ -17,6 +37,9 @@
   & * {
     display: inline-block;
     vertical-align: middle;
+  }
+  &:hover span.filter__gray {
+    filter: grayscale(0);
   }
   h3 {
     margin-left: 0.7rem;
@@ -34,7 +57,6 @@
       background: url(../images/gap.jpg) no-repeat;
       background-size: contain;
       border: 2px solid $color-silver;
-      filter: grayscale(100%);
       &:hover {
         filter: grayscale(0);
       }
@@ -44,8 +66,18 @@
 }
 .cv-content-section-content {
   padding-left: 2rem;
+  ul {
+    margin-bottom: 1rem;
+  }
 }
 .interests-list {
   display: flex;
   justify-content: space-around;
+  li {
+    img {
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
 }

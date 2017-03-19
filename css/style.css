@@ -64,34 +64,11 @@ body {
 .site-footer {
   flex: 0 0 auto; }
 
+.filter__gray {
+  filter: grayscale(100%); }
+
 .container {
   padding: 1rem 10%; }
-
-@media screen and (max-width: 1920px) {
-  .container {
-    padding: 1rem 18%; } }
-
-@media screen and (max-width: 1440px) {
-  .container {
-    padding: 1rem 14%; } }
-
-@media screen and (max-width: 1280px) {
-  .container {
-    padding: 1rem 10%; } }
-
-@media screen and (max-width: 960px) {
-  .container {
-    padding: 1rem 5%; } }
-
-@media screen and (max-width: 768px) {
-  .main-column {
-    flex-direction: column; } }
-
-@media screen and (max-width: 320px) {
-  .container {
-    padding: 0; }
-  .header-functional-button {
-    display: none; } }
 
 h2,
 h3 {
@@ -104,8 +81,24 @@ h3 {
   color: #ffffff;
   padding: 0.5rem 0.8rem; }
 
-.animate {
-  transition: all 0.3s; }
+.transition {
+  transition: all 0.8s; }
+
+.icon__bg {
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.icon__sm {
+  height: 16px;
+  width: 16px; }
+
+.icon__md {
+  height: 32px;
+  width: 32px; }
+
+.icon__lg {
+  height: 48px;
+  width: 48px; }
 
 .site-header {
   display: flex;
@@ -188,18 +181,6 @@ h3 {
 .flag-uk {
   background-image: url(../images/uk.svg); }
 
-@media screen and (max-width: 768px) {
-  .site-header-heading {
-    text-align: center; }
-    .site-header-heading h1 {
-      font-size: 3rem; } }
-
-@media screen and (max-width: 320px) {
-  .site-header-heading h1 {
-    font-size: 2rem; }
-  .site-header-heading h2 {
-    font-size: 1rem; } }
-
 .site-aside {
   min-width: 300px;
   text-align: center;
@@ -215,8 +196,7 @@ h3 {
   margin: 2rem auto;
   background-image: url(../images/grumpy-ava.jpg);
   background-size: cover;
-  border: 2px solid #d7d9e0;
-  filter: grayscale(100%); }
+  border: 2px solid #d7d9e0; }
   .aside-logo:hover {
     filter: grayscale(0); }
 
@@ -236,6 +216,24 @@ h3 {
   .cv-content section {
     margin-bottom: 2rem; }
 
+.icon__about {
+  background-image: url(../images/content/user.svg); }
+
+.icon__skills {
+  background-image: url(../images/content/code.svg); }
+
+.icon__work {
+  background-image: url(../images/content/work.svg); }
+
+.icon__edu {
+  background-image: url(../images/content/diploma.svg); }
+
+.icon__portfolio {
+  background-image: url(../images/content/portfolio.svg); }
+
+.icon__interests {
+  background-image: url(../images/content/idea.svg); }
+
 .cv-content-sections {
   padding-right: 2rem; }
 
@@ -246,6 +244,8 @@ h3 {
   .cv-content-section-heading * {
     display: inline-block;
     vertical-align: middle; }
+  .cv-content-section-heading:hover span.filter__gray {
+    filter: grayscale(0); }
   .cv-content-section-heading h3 {
     margin-left: 0.7rem; }
 
@@ -259,19 +259,86 @@ h3 {
     width: 150px;
     background: url(../images/gap.jpg) no-repeat;
     background-size: contain;
-    border: 2px solid #d7d9e0;
-    filter: grayscale(100%); }
+    border: 2px solid #d7d9e0; }
     .cv-content-portfolio .portfolio-grid li:hover {
       filter: grayscale(0); }
 
 .cv-content-section-content {
   padding-left: 2rem; }
+  .cv-content-section-content ul {
+    margin-bottom: 1rem; }
 
 .interests-list {
   display: flex;
   justify-content: space-around; }
+  .interests-list li img:hover {
+    filter: grayscale(0); }
 
 footer.site-footer {
   color: #ffffff;
   background: #4682b4;
   border-bottom: 10px solid #0e4d6c; }
+
+@media screen and (max-width: 1920px) {
+  .container {
+    padding: 1rem 18%; } }
+
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 1rem 14%; } }
+
+@media screen and (max-width: 1280px) {
+  .container {
+    padding: 1rem 10%; } }
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding: 1rem 5%; } }
+
+@media screen and (max-width: 768px) {
+  .site-header-heading {
+    text-align: center; }
+    .site-header-heading h1 {
+      font-size: 3rem; }
+  .main-column {
+    flex-direction: column; }
+    .main-column .site-aside {
+      border-right: 0; }
+      .main-column .site-aside .aside-content {
+        padding: 0; }
+  .cv-content {
+    padding: 1rem; }
+    .cv-content .cv-content-sections,
+    .cv-content .cv-content-section-content {
+      padding: 0; }
+  .cv-content-section-heading h3 {
+    letter-spacing: normal; }
+  .cv-content-section-content .interests-list {
+    flex-wrap: wrap; }
+    .cv-content-section-content .interests-list li {
+      flex-basis: 25%;
+      text-align: center;
+      margin: 0.5rem; }
+  .cv-content-portfolio .portfolio-grid li {
+    height: 140px;
+    width: 140px; } }
+
+@media screen and (max-width: 560px) {
+  .cv-content-portfolio .portfolio-grid li {
+    height: 120px;
+    width: 120px; } }
+
+@media screen and (max-width: 320px) {
+  .site-header-heading h1 {
+    font-size: 2rem; }
+  .site-header-heading h2 {
+    font-size: 1rem; }
+  .header-functional-button {
+    display: none; }
+  .container {
+    padding: 0; }
+  .site-aside .aside-logo {
+    margin: 1rem auto; }
+  .cv-content-portfolio .portfolio-grid li {
+    height: 120px;
+    width: 120px; } }

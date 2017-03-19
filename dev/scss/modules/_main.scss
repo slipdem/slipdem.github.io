@@ -26,44 +26,14 @@ body {
 .site-footer {
   flex: 0 0 auto;
 }
-// Container
+.filter__gray {
+  filter: grayscale(100%);
+}
+// Container START
 .container {
   padding: 1rem 10%;
 }
-@media screen and (max-width: 1920px) {
-  .container {
-    padding: 1rem 18%;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .container {
-    padding: 1rem 14%;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .container {
-    padding: 1rem 10%;
-  }
-}
-@media screen and (max-width: 960px) {
-  .container {
-    padding: 1rem 5%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main-column {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 320px) {
-  .container {
-    padding: 0;
-  }
-  .header-functional-button {
-    display: none;
-  }
-}
-// Container END
+// Container FINISH
 h2,
 h3 {
   letter-spacing: 3px;
@@ -75,6 +45,27 @@ h3 {
   color: $color-white;
   padding: 0.5rem 0.8rem;
 }
-.animate {
-  transition: all 0.3s;
+.transition {
+  transition: all 0.8s;
 }
+// ICONs start
+.icon {
+
+}
+.icon__bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.icon__sm {
+  height: 16px;
+  width:  16px;
+}
+.icon__md {
+  height: 32px;
+  width:  32px;
+}
+.icon__lg {
+  height: 48px;
+  width:  48px;
+}
+// ICONs finish

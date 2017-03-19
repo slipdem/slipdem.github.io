@@ -90,23 +90,4 @@
 .flag-uk {
   background-image: url(../images/uk.svg);
 }
-// header media
-@media screen and (max-width: 768px) {
-  .site-header-heading {
-    text-align: center;
-    h1 {
-      font-size: 3rem;
-    }
-  }
-}
-@media screen and (max-width: 320px) {
-  .site-header-heading {
-    h1 {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 1rem;
-    }
-  }
-}
 // HEADER END

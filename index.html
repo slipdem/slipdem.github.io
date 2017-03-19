@@ -47,7 +47,7 @@
     <main class="main-column container">
       <!-- ASIDE-->
       <aside class="site-aside">
-        <section class="aside-logo animate"></section>
+        <section class="aside-logo filter__gray transition"></section>
         <section class="aside-personal">
           <div class="aside-section-heading">
             <h3>About</h3><span class="separate-line"></span>
@@ -58,7 +58,7 @@
               <li>Location: <a href="https://goo.gl/maps/sdsXCCkPH1U2">Smila, Ukraine</a></li>
               <li>Phone: <a href="tel:555-555-5555">555-555-5555</a></li>
               <li>E-mail: <a href="mailto:slipchenko.dmytro@gmail.com">slipchenko.dmytro<i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-              <li>Skype: <a href="http://#">skype<i class="fa fa-skype" aria-hidden="true"></i></a></li>
+              <li>Skype: <a href="#">skype<i class="fa fa-skype" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </section>
@@ -78,10 +78,10 @@
         </section>
       </aside>
       <!-- CONTENT-->
-      <article class="cv-content">
+      <div class="cv-content">
         <section class="cv-content-about cv-content-sections">
-          <header class="cv-content-section-heading"><i class="fa fa-2x fa-user-circle-o" aria-hidden="true"></i>
-            <h3>About me</h3>
+          <header class="cv-content-section-heading"><span class="icon__about icon__bg icon__md filter__gray transition"></span>
+            <h3>Message</h3>
           </header>
           <div class="cv-content-section-content">
             <ul>
@@ -91,7 +91,7 @@
           </div>
         </section>
         <section class="cv-content-skills cv-content-sections">
-          <header class="cv-content-section-heading"><i class="fa fa-2x fa-cogs" aria-hidden="true"></i>
+          <header class="cv-content-section-heading"><span class="icon__skills icon__bg icon__md filter__gray transition"></span>
             <h3>Skills</h3>
           </header>
           <div class="cv-content-section-content">
@@ -105,7 +105,7 @@
           </div>
         </section>
         <section class="cv-content-work-exp cv-content-sections">
-          <header class="cv-content-section-heading"><i class="fa fa-2x fa-briefcase" aria-hidden="true"></i>
+          <header class="cv-content-section-heading"><span class="icon__work icon__bg icon__md filter__gray transition"></span>
             <h3>Work Experience</h3>
           </header>
           <div class="cv-content-section-content">
@@ -116,54 +116,55 @@
           </div>
         </section>
         <section class="cv-content-education cv-content-sections">
-          <header class="cv-content-section-heading"><i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+          <header class="cv-content-section-heading"><span class="icon__edu icon__bg icon__md filter__gray transition"></span>
             <h3>Education</h3>
           </header>
           <div class="cv-content-section-content">
             <ul>
-              <li>Speciality: Software engineering for automated systems</li>
-              <li>Place: Cherkasy State Technological University </li>
-              <li>Location: Cherkasy, Ukraine</li>
-              <li>Years: 2004-2006</li>
-              <li>-----</li>
-              <li>Speciality: Developing and programming of the automated systems</li>
-              <li>Place: Smila Technical Secondary School of Food Technologies NUFT</li>
-              <li>Location: Smila, Cherkasy region, Ukraine</li>
-              <li>Years: 2000-2004</li>
+              <li>Software engineering for automated systems</li>
+              <li>Cherkasy State Technological University </li>
+              <li>Cherkasy, Ukraine</li>
+              <li>2004-2006</li>
+            </ul>
+            <ul>
+              <li>Developing and programming of the automated systems</li>
+              <li>Smila Technical Secondary School of Food Technologies NUFT</li>
+              <li>Smila, Cherkasy region, Ukraine</li>
+              <li>2000-2004</li>
             </ul>
           </div>
         </section>
         <section class="cv-content-portfolio cv-content-sections">
-          <header class="cv-content-section-heading"><i class="fa fa-2x fa-picture-o" aria-hidden="true"></i>
+          <header class="cv-content-section-heading"><span class="icon__portfolio icon__bg icon__md filter__gray transition"></span>
             <h3>Portfolio</h3>
           </header>
           <div class="cv-content-section-content">
             <ul class="portfolio-grid">
-              <li class="animate"></li>
-              <li class="animate"></li>
-              <li class="animate"></li>
-              <li class="animate"></li>
-              <li class="animate"></li>
-              <li class="animate"></li>
+              <li class="filter__gray transition"></li>
+              <li class="filter__gray transition"></li>
+              <li class="filter__gray transition"></li>
+              <li class="filter__gray transition"></li>
+              <li class="filter__gray transition"></li>
+              <li class="filter__gray transition"></li>
             </ul>
           </div>
         </section>
         <section class="cv-content-interests cv-content-sections">
-          <header class="cv-content-section-heading"><i class="fa fa-2x fa-meh-o" aria-hidden="true"></i>
+          <header class="cv-content-section-heading"><span class="icon__interests icon__bg icon__md filter__gray transition"></span>
             <h3>Interests</h3>
           </header>
           <div class="cv-content-section-content">
             <ul class="interests-list">
-              <li>Photography<i class="fa fa-cog" aria-hidden="true"></i></li>
-              <li>Books<i class="fa fa-cog" aria-hidden="true"></i></li>
-              <li>Music<i class="fa fa-cog" aria-hidden="true"></i></li>
-              <li>Cooking<i class="fa fa-cog" aria-hidden="true"></i></li>
-              <li>Skis<i class="fa fa-cog" aria-hidden="true"></i></li>
-              <li>Running<i class="fa fa-cog" aria-hidden="true"></i></li>
+              <li><img class="icon__bg icon__lg filter__gray transition" src="/images/interests/camera.svg" alt="Photography"></li>
+              <li><img class="icon__bg icon__lg filter__gray transition" src="/images/interests/books.svg" alt="Reading"></li>
+              <li><img class="icon__bg icon__lg filter__gray transition" src="/images/interests/music.svg" alt="Music"></li>
+              <li><img class="icon__bg icon__lg filter__gray transition" src="/images/interests/cooking.svg" alt="cooking"></li>
+              <li><img class="icon__bg icon__lg filter__gray transition" src="/images/interests/ski.svg" alt="Ski"></li>
+              <li><img class="icon__bg icon__lg filter__gray transition" src="/images/interests/basketball.svg" alt="Basketball"></li>
             </ul>
           </div>
         </section>
-      </article>
+      </div>
     </main>
     <!-- SITE FOOTER-->
     <footer class="site-footer container"></footer>
